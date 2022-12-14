@@ -1,0 +1,10 @@
+<mat-card>
+  <mat-card-content>
+    <div id="players-header">Players</div>
+    <div id="players-container">
+      <span class="player" *ngFor="let name of playerNames">{{name}}</span>
+    </div>
+    <div id="share-prompt">Share the url for others to join!</div>
+    <button (click)="emitStart()" mat-raised-button color="primary" [disabled]="isStarting">Start the Game!</button>
+  </mat-card-content>
+</mat-card>

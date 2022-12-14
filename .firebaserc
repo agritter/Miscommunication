@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "miscommunication-bd743": {
+      "hosting": {
+        "Miscommunication": [
+          "miscommunication"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "miscommunication-bd743"
+  }
+}

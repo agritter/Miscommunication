@@ -1,0 +1,16 @@
+img {
+  width: min(100%, 80vh);
+  border-width: 1;
+  border-style: dashed;
+  border-color: lightgray;
+}
+
+#guess {
+  border-width: 2px;
+  border-color: lightgray;
+  border-radius: 1em;
+  border-style: dashed;
+  padding: .5em;
+  width: fit-content;
+  font-size: larger;
+}

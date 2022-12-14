@@ -1,0 +1,32 @@
+<div [ngSwitch]="gameState">
+  <app-message *ngSwitchCase="GameState.loadingGame" message='Loading...'>
+  </app-message>
+
+  <app-join-game *ngSwitchCase="GameState.joinGame" (join)="joinGame($event)">
+  </app-join-game>
+
+  <app-start-game *ngSwitchCase="GameState.startGame" [playerNames]="playerNames" (start)="startGame()">
+  </app-start-game>
+
+  <app-message *ngSwitchCase="GameState.waitForGameStart" message='Waiting for the game to start!'>
+  </app-message>
+
+  <app-message *ngSwitchCase="GameState.waitingForOtherPlayer" message='Waiting for another player!'>
+  </app-message>
+
+  <app-draw *ngSwitchCase="GameState.draw" [guess]="guess" (image)="saveImage($event)"></app-draw>
+
+  <app-guess *ngSwitchCase="GameState.guess" [image]="imageUrl" (guess)="saveGuess($event)"></app-guess>
+
+  <app-review *ngSwitchCase="GameState.review" [chain]="chain!"></app-review>
+
+  <app-message *ngSwitchCase="GameState.waitingForReview" message='Waiting for your chain to complete!'>
+  </app-message>
+
+  <app-message *ngSwitchCase="GameState.gameAlreadyStarted" message='Sorry, this game has already started.'>
+  </app-message>
+
+  <app-message *ngSwitchCase="GameState.gameDoesNotExist"
+    message='No game was found at this url. Check that you entered the correct url and are connected to the internet.'>
+  </app-message>
+</div>

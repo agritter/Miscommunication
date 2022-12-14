@@ -1,0 +1,23 @@
+<mat-card>
+  <mat-card-title>
+    {{guess}}
+  </mat-card-title>
+  <mat-card-subtitle>
+    Draw a picture to represent "{{guess}}"
+  </mat-card-subtitle>
+
+  <mat-card-content>
+    <div id="whiteboard-and-buttons-container">
+      <div id="whiteboard-container-container">
+        <div id="whiteboard-container">
+          <ng-whiteboard [fullScreen]="true" (save)="onSave($event)"></ng-whiteboard>
+        </div>
+      </div>
+      <div id="whiteboard-buttons">
+        <button (click)="undo()" mat-raised-button color="accent">Undo</button>
+        <button (click)="redo()" mat-raised-button color="accent">Redo</button>
+      </div>
+    </div>
+    <button (click)="saveImage()" [disabled]="isSaving" mat-raised-button color="primary">Done</button>
+  </mat-card-content>
+</mat-card>

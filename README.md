@@ -1,6 +1,13 @@
 # Miscommunication
 
+Miscommunication is a multiplayer webapp game. Players each start with a word. A player then draws a representation of that word.  The drawing is passed to another player to guess what it is and so on. At the end each player can view the words and images in their "chain".
+
+-----------------------------------
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
+
+## Testing Tip
+
+Run in multiple guest accounts in Chrome so that each window has it's own local storage.
 
 ## Development server
 

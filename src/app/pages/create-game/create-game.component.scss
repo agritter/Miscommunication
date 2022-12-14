@@ -1,0 +1,22 @@
+.centered-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+
+#create-game-button {
+  font-size: larger;
+  margin-bottom: 1em;
+}
+
+/* Add line above */
+#how-its-played {
+  width: 100%;
+  border-top-width: 2px;
+  border-color: lightgray;
+  border-top-style: solid;
+  margin-top: 1em;
+  padding-top: 1em;
+  font-weight: bolder;
+  margin-bottom: 0.5em;
+}

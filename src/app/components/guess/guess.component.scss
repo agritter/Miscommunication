@@ -1,0 +1,10 @@
+img {
+  width: min(100%, 80vh);
+  border-width: 1;
+  border-style: dashed;
+  border-color: lightgray;
+}
+
+#done-button {
+  margin-left: 1em;
+}

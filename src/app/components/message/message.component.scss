@@ -1,0 +1,20 @@
+#message-card {
+  z-index: 100; // Keep above the whiteboard
+
+  #message {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: larger;
+    width: fit-content;
+  }
+}
+
+ng-whiteboard {
+  // Place whiteboard in background
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: calc(100% - 3px); // For some reason with more pxs the height overflows
+  color: #23272e;
+}

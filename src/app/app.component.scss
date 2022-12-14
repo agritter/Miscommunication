@@ -1,0 +1,10 @@
+#content {
+  padding: 1em;
+}
+
+mat-toolbar {
+  // Keep toolbar in place and on top when page scrolled
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}

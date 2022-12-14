@@ -1,0 +1,34 @@
+#players-header {
+  /* Small line below */
+  border-bottom-width: 2px;
+  border-color: lightgray;
+  border-bottom-style: solid;
+  width: fit-content;
+}
+
+#players-container {
+  /* Wrap players to next line if necessary */
+  display: flex;
+  flex-wrap: wrap;
+
+  .player {
+    /* Border around */
+    margin-top: 1em;
+    margin-right: 1em;
+    border-width: 2px;
+    border-color: lightgray;
+    border-radius: 1em;
+    border-style: solid;
+    padding: .5em;
+  }
+}
+
+#share-prompt {
+  /* Wide line above */
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top-width: 2px;
+  border-color: lightgray;
+  border-top-style: solid;
+  margin-bottom: 1em;
+}

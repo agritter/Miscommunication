@@ -1,0 +1,19 @@
+<mat-card>
+  <mat-card-title>
+    ?????
+  </mat-card-title>
+  <mat-card-subtitle>
+    What does this picture represent?
+  </mat-card-subtitle>
+
+  <mat-card-content>
+    <img [src]="image" />
+    <div>
+      <mat-form-field>
+        <mat-label>Guess</mat-label>
+        <input [(ngModel)]="guessInput" (keyup.enter)="saveGuess()" matInput />
+      </mat-form-field>
+      <button id="done-button" (click)="saveGuess()" mat-raised-button color="primary">Done</button>
+    </div>
+  </mat-card-content>
+</mat-card>
